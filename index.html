@@ -31,8 +31,19 @@
         </map> 
       </div>
 <div class="imgbox">
-    <a href="#ex1" rel="modal:open"><img class="center-fit" src='./initialconv.png'></a>
+    <img id="inbox" class="center-fit" src='./initialconv.png' />
 </div>
+
+<script>
+
+    $('#inbox').click(function(event) {
+        $("#ex1").modal({
+                escapeClose: false,
+                clickClose: false,
+                showClose: false
+              });
+        });
+    </script>
 
 </body>
 </html>
